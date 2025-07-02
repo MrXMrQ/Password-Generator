@@ -1,6 +1,5 @@
-from GUI.window import Window
+from GUI.main_window import MainWindow
 
 
-window = Window("Password generator", 500, 500)
-
-window.mainloop()
+app = MainWindow("Password Generator", 600, 400)
+app.mainloop()
