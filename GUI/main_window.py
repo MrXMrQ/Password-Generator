@@ -11,6 +11,9 @@ class MainWindow(ctk.CTk):
     def __init__(self, title: str, width: int, height: int, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
 
+        ctk.set_appearance_mode("dark")
+        ctk.set_default_color_theme("dark-blue")
+
         self.title(title)
         self.geometry(f"{width}x{height}")
         self.resizable(True, True)
