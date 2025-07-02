@@ -63,7 +63,6 @@ class CheckBoxFrame(ctk.CTkFrame):
                 cb.select()
             else:
                 cb.deselect()
-        print(f"Aktuelle Länge: {self._selected_length}")
 
     @property
     def selected_length(self) -> int:

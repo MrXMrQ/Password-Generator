@@ -18,17 +18,17 @@ class Window(ctk.CTk):
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
-        panel = ctk.CTkFrame(self, fg_color="blue")
+        panel = ctk.CTkFrame(self)
         panel.grid_rowconfigure((0, 1), weight=1)
         panel.grid_columnconfigure(0, weight=1)
         panel.grid(row=0, column=0, sticky="nsew", padx=Window._PADX, pady=Window._PADY)
 
-        checkBoxFrame = CheckBoxFrame(panel, fg_color="red")
+        checkBoxFrame = CheckBoxFrame(panel)
         checkBoxFrame.grid(
             row=1, column=0, sticky="nsew", padx=Window._PADX, pady=Window._PADY
         )
 
-        outputFrame = OutPutFrame(panel, checkBoxFrame, "yellow")
+        outputFrame = OutPutFrame(panel, checkBoxFrame)
         outputFrame.grid(
             row=0, column=0, sticky="nsew", padx=Window._PADX, pady=Window._PADY
         )
