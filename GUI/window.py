@@ -1,6 +1,6 @@
 import customtkinter as ctk
 
-from GUI.checkBoxFrame import CheckBoxFrame
+from GUI.check_box_frame import CheckBoxFrame
 from GUI.ouputFrame import OutPutFrame
 
 

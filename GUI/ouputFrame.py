@@ -2,6 +2,7 @@ import customtkinter as ctk
 import string
 import random
 import pyperclip
+from GUI.copy_pop_up import RoundedFlashWindow
 from math import floor, ceil
 
 from GUI.window import CheckBoxFrame
@@ -116,4 +117,5 @@ class OutPutFrame(ctk.CTkFrame):
         self.textbox.delete("0.0", "end")
 
     def copy(self) -> None:
+        RoundedFlashWindow(self, duration=800, move_up=40, radius=20)
         pyperclip.copy(self.textbox.get("0.0", "end"))
